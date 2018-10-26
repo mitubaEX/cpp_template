@@ -55,6 +55,9 @@ using Mii = M<int, int>;
 using Mll = M<ll, ll>;
 using Msi = M<string, int>;
 
+template<class T> istream& operator >>(istream &is, vector<T> &v){for(T &e:v)is>>e;return is;}
+template<class T> ostream& operator <<(ostream &os, vector<T> v){os<<"{";for(T &e:v)os<<e<<(v.size()-(int)(&e-&v[0])>1?", ":"");os<<"}";return os;}
+
 void _DEBUG(){}
 template<typename H,typename... T> void _DEBUG(H a,T...b){cerr<<a<<(sizeof...(b)?",":"\n");_DEBUG(b...);}
 
