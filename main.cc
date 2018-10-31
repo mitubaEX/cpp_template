@@ -80,17 +80,11 @@ template<class H,class... T> void resz(int n,H& a,T&... b){a.resize(n);resz(n,b.
 #define DX2 {-1,0,1,0}
 #define DY2 {0,-1,0,1}
 
-// 最大公約数
-ll gcd(ll a,ll b){return b?gcd(b,a%b):a;}
-// 最大公倍数
-ll lcm(ll a,ll b){return a*b/gcd(a,b);}
 
-// io 高速化
-struct io{
-    io(){
-        cin.tie(0); ios::sync_with_stdio(0); cout<<fixed<<setprecision(20);
-    };
-}io;
+ll gcd(ll a,ll b){return b?gcd(b,a%b):a;}// 最大公約数
+ll lcm(ll a,ll b){return a*b/gcd(a,b);}// 最大公倍数
+int factorial(int n){if(n > 1)return n * factorial(n - 1);else return 1;} // 階乗
+struct io{io(){cin.tie(0); ios::sync_with_stdio(0); cout<<fixed<<setprecision(20);};}io;// io 高速化
 
 signed main() {
 
