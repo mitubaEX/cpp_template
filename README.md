@@ -2,15 +2,15 @@
 
 ## Usage
 
-contest_setting.sh wget my main.cc files.
+contest_setting.sh wget my main.cc files to each problem dir.
 
 ```
-./contest_setting.sh <problem num>
+./contest_setting.sh <problem num> <contest url>
 ```
 
 ## Example
 
-please remove problem number of url.
+Please remove problem number of url.
 
 ### Example: remove a
 
@@ -57,3 +57,7 @@ $ tree
 ```
 
 finish.
+
+## Required
+
+- [kmyk/online-judge-tools](https://github.com/kmyk/online-judge-tools)
