@@ -12,17 +12,25 @@ contest_setting.sh wget my main.cc files to each problem dir.
 
 Please remove problem number of url.
 
-### Example: remove a
+### Step1: remove a
 
 ```
-https://beta.atcoder.jp/contests/agc028/tasks/agc028_a -> https://beta.atcoder.jp/contests/agc028/tasks/agc028_
+https://atcoder.jp/contests/abc115/tasks/abc115_a -> https://atcoder.jp/contests/abc115/tasks/abc115_
 ```
 
-### setting problem directory
+### Step2: change atcoder into beta.atcoder
+
+```
+https://atcoder.jp/contests/abc115/tasks/abc115_ -> https://beta.atcoder.jp/contests/abc115/tasks/abc115_
+```
+
+
+### Step3: setting problem directory
 
 ```
 # run
-./contest_setting.sh 2 https://beta.atcoder.jp/contests/agc028/tasks/agc028_
+curl https://raw.githubusercontent.com/mitubaEX/cpp_template/master/contest_setting.sh | sh -s 2 https://beta.atcoder.jp/contests/abc115/tasks/abc115_
+
 
 
 $ tree
@@ -33,21 +41,17 @@ $ tree
 │       ├── sample-1.in
 │       ├── sample-1.out
 │       ├── sample-2.in
-│       ├── sample-2.out
-│       ├── sample-3.in
-│       └── sample-3.out
+│       └── sample-2.out
 ├── B
 │   ├── main.cc
 │   └── test
 │       ├── sample-1.in
 │       ├── sample-1.out
 │       ├── sample-2.in
-│       ├── sample-2.out
-│       ├── sample-3.in
-│       └── sample-3.out
-├── contest_setting.sh
+│       └── sample-2.out
 └── run
 
+4 directories, 11 files
 ```
 
 ### test
