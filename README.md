@@ -10,22 +10,20 @@ contest_setting.sh wget my main.cc files to each problem dir.
 
 ## Example
 
-Please remove problem number of url.
-
-### Step1: remove a
+### Step1: remove problem number of url
 
 ```
 https://atcoder.jp/contests/abc115/tasks/abc115_a -> https://atcoder.jp/contests/abc115/tasks/abc115_
 ```
 
-### Step2: change atcoder into beta.atcoder
+### Step2: change atcoder into beta.atcoder of url
 
 ```
 https://atcoder.jp/contests/abc115/tasks/abc115_ -> https://beta.atcoder.jp/contests/abc115/tasks/abc115_
 ```
 
 
-### Step3: setting problem directory
+### Step3: run script for setting problem directory
 
 ```
 # run
@@ -50,8 +48,6 @@ $ tree
 │       ├── sample-2.in
 │       └── sample-2.out
 └── run
-
-4 directories, 11 files
 ```
 
 ### test
